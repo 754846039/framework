@@ -1,4 +1,10 @@
 # 属性和方法
+>1. [计算属性](#计算属性 "计算属性")
+1. [methods](#methods "methods")
+1. [watch](#watch "watch")
+1. [生命周期](#生命周期 "生命周期")
+
+
 ```javascript
 var vm = new Vue({
   //选择器
@@ -77,6 +83,8 @@ var vm = new Vue({
 **【注意】** 我们为什么需要缓存？假设我们有一个性能开销比较大的的计算属性 A ，它需要遍历一个极大的数组和做大量的计算。然后我们可能有其他的计算属性依赖于 A 。如果没有缓存，我们将不可避免的多次执行 A 的 getter！如果你不希望有缓存，请用 method 替代。
 **【注意】** 当你有一些数据需要随着其它数据变动而变动时，很容易滥用 watch 。然而，通常更好的想法是使用 computed 属性而不是命令式的 watch 回调。
 
+
+
 ## methods
 只要发生重新渲染，method 调用定义的函数
 ```javascript
@@ -117,3 +125,6 @@ var vm = new Vue({
   }
 })
 ```
+
+## 生命周期
+![vue生命周期图例](amWiki/images/vue_lifecycle.jpg)

@@ -25,6 +25,7 @@
 - [简介](?file=004_vue/001_简介 "简介")
 - [options](?file=004_vue/002_options "options")
 - [模板语法](?file=004_vue/003_模板语法 "模板语法")
+- [注意事项](?file=004_vue/012_注意事项 "注意事项")
 
 ##### angular
 - [angular简介](?file=005_angular/001_angular简介 "angular简介")
